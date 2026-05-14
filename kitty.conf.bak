@@ -3,7 +3,6 @@
 # =========================
 
 # Fuente principal del terminal
-# bash -> kitty +list-fonts <- consultar name fonts 
 font_family         Inconsolata Nerd Font 
 
 # Fuente para texto en negrita
@@ -17,8 +16,7 @@ font_family         Inconsolata Nerd Font
 # bold_italic_font auto
 
 # Tamaño de fuente
-# font_size 15.0
-font_size 14.5
+font_size 15.0
 
 
 # =========================
@@ -27,7 +25,7 @@ font_size 14.5
 
 # Color del texto cuando el cursor lo cubre
 # (más útil en cursor tipo block)
-cursor_text_color #1e1e1e
+cursor_text_color #87d3c4
 
 # Forma del cursor:
 # block | beam | underline
@@ -46,7 +44,7 @@ cursor_trail_decay 0.1 0.4
 cursor_trail_start_threshold 2
 
 # Color de la estela del cursor
-cursor_trail_color #00daf0
+cursor_trail_color #87d3c4
 
 # Grosor del cursor tipo beam
 cursor_beam_thickness 1.5
@@ -60,7 +58,7 @@ cursor_stop_blinking_after 15.0
 # =========================
 
 # Cantidad de líneas almacenadas en historial scrollback
-scrollback_lines 20000
+scrollback_lines 1000
 
 
 # =========================
@@ -87,7 +85,7 @@ visual_bell_duration 0.1
 # =========================
 
 # Grosor del borde de la ventana
-window_border_width 1
+window_border_width 0.1
 
 # Dibuja bordes minimalistas entre ventanas split
 draw_minimal_borders yes
@@ -97,10 +95,10 @@ draw_minimal_borders yes
 window_padding_width 30
 
 # Color del borde de la ventana activa
-active_border_color #00daf0
+active_border_color #1D1D1D
 
 # Color del borde de ventanas inactivas
-inactive_border_color #2a2a2a
+inactive_border_color #5AEDA3
 
 
 # =========================
@@ -116,97 +114,97 @@ tab_bar_style fade
 tab_bar_align center
 
 # Color del texto del tab activo
-active_tab_foreground   #1e1e1e
+active_tab_foreground   #1D1D1D
 
 # Fondo del tab activo
-active_tab_background   #00daf0
+active_tab_background   #19A0B4
 
 # Estilo de fuente del tab activo
 # (esta línea probablemente no tiene efecto válido)
-active_tab_font_style   bold
+active_tab_font_style   inconsolata 
 
 # Texto de tabs inactivos
-inactive_tab_foreground #a0a0a0
+inactive_tab_foreground #5AEDA3
 
 # Fondo de tabs inactivos
-inactive_tab_background #252525
+inactive_tab_background #1d1d1d
 
 # Estilo fuente tabs inactivos
-inactive_tab_font_style normal
+inactive_tab_font_style inconsolata 
 
 
-# =========================
-# COLORES GENERALES
-# =========================
+# # =========================
+# # COLORES GENERALES
+# # =========================
 
-# Color principal del texto
-foreground #d6d6d6
+# # Color principal del texto
+# foreground #DEDDDA
 
-# Color de fondo del terminal
-background #1e1e1e
+# # Color de fondo del terminal
+# background #060F0A
 
-# Transparencia del fondo
-# 1.0 = sólido
-# 0.0 = completamente transparente
-background_opacity 0.95
-
-
-# =========================
-# SELECCIÓN DE TEXTO
-# =========================
-
-# Color del texto seleccionado
-selection_foreground #1e1e1e
-
-# Fondo del texto seleccionado
-selection_background #c06090
+# # Transparencia del fondo
+# # 1.0 = sólido
+# # 0.0 = completamente transparente
+# background_opacity 0.9
 
 
-# =========================
-# PALETA ANSI
-# =========================
+# # =========================
+# # SELECCIÓN DE TEXTO
+# # =========================
 
-# Colores ANSI básicos usados por programas CLI
+# # Color del texto seleccionado
+# selection_foreground #35b1d2
 
-
-# ----- BLACK -----
-color0 #2a2a2a
-color8 #555555
-
-
-# ----- RED -----
-color1 #ff1493
-color9 #ff69b4
+# # Fondo del texto seleccionado
+# selection_background #222222
 
 
-# ----- GREEN -----
-color2  #8c8c8c
-color10 #b0b0b0
+# # =========================
+# # PALETA ANSI
+# # =========================
+
+# # Colores ANSI básicos usados por programas CLI
 
 
-# ----- YELLOW -----
-color3  #a0a0a0
-color11 #c0c0c0
+# # ----- BLACK -----
+# color0 #222222
+# color8 #348558
 
 
-# ----- BLUE -----
-color4  #00daf0
-color12 #7befff
+# # ----- RED -----
+# color1 #e2a8bf	
+# color9 #ffcdd9
 
 
-# ----- MAGENTA -----
-color5  #c06090
-color13 #ff8ac6
+# # ----- GREEN -----
+# color2  #81d778
+# color10 #beffa8
 
 
-# ----- CYAN -----
-color6  #00daf0
-color14 #9cf6ff
+# # ----- YELLOW -----
+# color3  #c4c9c0
+# color11 #d0ccca
 
 
-# ----- WHITE -----
-color7  #d6d6d6
-color15 #ffffff
+# # ----- BLUE -----
+# color4  #325856
+# color12 #7ab0d2
+
+
+# # ----- MAGENTA -----
+# color5  #a481d3
+# color13 #c5a7d9
+
+
+# # ----- CYAN -----
+# color6  #15ab9c
+# color14 #8cdfe0
+
+
+# # ----- WHITE -----
+# color7  #02c5e0
+# color15 #e0e0e0
 
 
 # =========================
@@ -229,4 +227,29 @@ map kitty_mod+f7 focus_visible_window
 # Cambia foco entre ventanas usando Ctrl+Tab
 map ctrl+tab focus_visible_window
 
+foreground #e1e1e1
+background #1e1e1e
 
+color0  #2a2a2a
+color8  #5a5a5a
+
+color1  #ff7a90
+color9  #ffb3c1
+
+color2  #7ce38b
+color10 #b8ffb5
+
+color3  #d6d68a
+color11 #f0e68c
+
+color4  #5fb3ff
+color12 #9ad1ff
+
+color5  #c792ea
+color13 #ddb3ff
+
+color6  #4fd6be
+color14 #98f5e1
+
+color7  #cfcfcf
+color15 #ffffff
